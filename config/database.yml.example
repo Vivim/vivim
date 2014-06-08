@@ -1,0 +1,6 @@
+development: &development
+  adapter: postgresql
+  encoding: unicode
+  database: vivim_development
+  username: postgres
+  password: postgres

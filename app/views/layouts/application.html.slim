@@ -1,0 +1,80 @@
+doctype html
+html
+  head
+    title Mobile App Development and Web Design Company in Minsk – iPhone and Android apps
+    meta name="description" content="Vivim is a mobile design and development company in Minsk focused on making beautiful apps for iOS, Android, and Web. Ruby on Rails Web development."
+    meta name="keywords" content="mobile app development company, Ruby on Rails developer, mobile application developer, iphone apps development, android app development company, android apps development, web design, mobile design, design agency Minsk"
+	meta name="viewport" content="width=device-width, initial-scale=1.0"
+	meta http-equiv="X-UA-Compatible" content="IE=edge"
+
+    link rel="shortcut icon" href="/favicon.png"
+
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', 'data-turbolinks-track' => true
+
+    link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'
+
+  body
+    header.navbar.navbar-inverse.navbar-fixed-top role="banner"
+      .container
+        .navbar-header
+          button.navbar-toggle data-target="#bs-navbar-collapse" data-toggle="collapse" type="button"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand href="#{root_path}"
+            img src="images/logo.png"
+
+        .collapse.navbar-collapse id="bs-navbar-collapse" role="navigation"
+          ul.nav.navbar-nav
+            li: a.scroller href="#{root_path}#aboutus" data-section="#aboutus" ABOUT US
+            li: a.scroller href="#{root_path}#features" data-section="#features" EXPERTS
+            li: a.scroller href="#{root_path}#projects" data-section="#projects" PROJECTS
+            li: a.scroller href="#{root_path}#clients" data-section="#clients" CLIENTS
+            li = link_to 'WHY ROR?', why_ror_path
+            li = link_to 'MOBILE', mobile_path
+            li: a.scroller href="#{root_path}#contact" data-section="#contact" CONTACT US
+
+    = yield
+
+    footer.contact id="contact"
+      .container
+        .row
+          .col-xs-12.col-sm-4.col-md-4.col-lg-4
+            a href="#"
+              img.img-responsive src="images/logo.png"
+
+            ul
+              li 18 Odesskaya St. Suite 4.
+              li Minsk, Belarus 220021
+              li.phone: a href="tel:375-173-991522" +375 17 3991522
+              li: a href="mailto:info@vivim.net" info@vivim.net
+
+          .col-xs-12.col-sm-7.col-md-7.col-lg-7.pull-right
+            h2 Ready to start your project?
+            = form_tag(contact_path) do
+              .col-sm-6.col-md-6.col-lg-6
+                .form-group
+                  = text_field :contact, :name, class: 'form-control', placeholder: 'Name', required: true
+                .form-group
+                  = email_field :contact, :email, class: 'form-control', placeholder: 'Email', required: true
+                .form-group
+                  = phone_field :contact, :phone, class: 'form-control', placeholder: 'Phone Number'
+              .col-sm-6.col-md-6.col-lg-6
+                .form-group
+                  = text_area :contact, :comment, class: 'form-control', placeholder: 'Comment', rows: 6, required: true
+
+              button.btn.btn-green type="submit" Send
+
+        .row
+          .col-lg-4
+            p © 2014 - Vivim
+
+          .col-lg-6.pull-right
+            .social
+              a.facebook href="#": i.icon-facebook
+              a.twitter href="#": i.icon-twitter
+              a.gplus href="#": i.icon-google-plus
+
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
