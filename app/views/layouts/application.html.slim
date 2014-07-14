@@ -46,9 +46,11 @@ html
               img.img-responsive src="images/logo.png"
 
             ul
-              li: a href='https://www.google.com/maps/place/8400+E+Crescent+Pkwy+%23600,+Englewood,+CO+80111/@39.6224585,-104.889195,17z/data=!3m1!4b1!4m2!3m1!1s0x876c86565615fad3:0xba42a985286edf11' Visit our office</br>8400 East Crescent Parkway Suite 600 </br> Greenwood Village, CO 80111
-              li.phone: a href="tel:(720)504-0111"Email: (720)504-0111
-              li: a href="mailto:info@vivim.net"Pnone: info@vivim.net
+              li Visit our office
+              li: a href='https://www.google.com/maps/place/8400+E+Crescent+Pkwy+%23600,+Englewood,+CO+80111/@39.6224585,-104.889195,17z/data=!3m1!4b1!4m2!3m1!1s0x876c86565615fad3:0xba42a985286edf11' 8400 East Crescent Parkway Suite 600 </br> Greenwood Village, CO 80111
+              br
+              li Phone: <a href='tel:(720)504-0111' class='phone'>(720)504-0111</a>
+              li Email: <a href="mailto:info@vivim.net">info@vivim.net</a>
           .col-xs-12.col-sm-7.col-md-7.col-lg-7.pull-right
             h2 Ready to start your project?
             = form_tag(contact_path) do
