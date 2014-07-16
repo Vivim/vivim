@@ -11,6 +11,7 @@ html
 
     = csrf_meta_tags
     = stylesheet_link_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
     javascript:
       alert('Slim supports embedded javascript!')
 
@@ -53,6 +54,7 @@ html
               br
               li Phone: #{link_to '(720)504-0111', 'tel:(720)504-0111', class: 'phone', onclick: "ga('send', 'event', { eventCategory: 'Phone', eventAction: 'Click'});"}
               li Email: #{link_to 'info@vivim.net', 'mailto:info@vivim.net'}
+              li Email: #{link_to 'info@vivim.net', 'mailto:info@vivim.net'}
           .col-xs-12.col-sm-7.col-md-7.col-lg-7.pull-right
             h2 Ready to start your project?
             = form_tag(contact_path) do
@@ -79,4 +81,3 @@ html
               a.twitter href="https://twitter.com/VivimDesign": i.icon-twitter
               a.gplus href="https://plus.google.com/u/0/110040302903868037182/posts": i.icon-google-plus
 
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
