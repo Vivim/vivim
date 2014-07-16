@@ -49,7 +49,7 @@ html
               li Visit our office
               li: a href='https://www.google.com/maps/place/8400+E+Crescent+Pkwy+%23600,+Englewood,+CO+80111/@39.6224585,-104.889195,17z/data=!3m1!4b1!4m2!3m1!1s0x876c86565615fad3:0xba42a985286edf11' 8400 East Crescent Parkway Suite 600 </br> Greenwood Village, CO 80111
               br
-              li Phone: #{link_to '(720)504-0111', 'tel:(720)504-0111', class: 'phone'}
+              li Phone: #{link_to '(720)504-0111', 'tel:(720)504-0111', class: 'phone', onclick: "ga('send', 'event', { eventCategory: 'Phone', eventAction: 'Click'});"}
               li Email: #{link_to 'info@vivim.net', 'mailto:info@vivim.net'}
           .col-xs-12.col-sm-7.col-md-7.col-lg-7.pull-right
             h2 Ready to start your project?
@@ -65,7 +65,7 @@ html
                 .form-group
                   = text_area :contact, :comment, class: 'form-control', placeholder: 'Comment', rows: 6, required: true
 
-              button.btn.btn-green type="submit" Send
+              button.btn.btn-green type="submit" value='Submit' onClick="ga('send', 'event', { eventCategory: 'Start', eventAction: 'Send'});" Send
 
         .row
           .col-lg-4
