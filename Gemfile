@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'slim-rails'
 gem 'turbolinks'
+gem "dynamic_sitemaps"
 
 group :development do
   gem 'capistrano', require: false

@@ -53,6 +53,7 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     colorize (0.7.3)
+    dynamic_sitemaps (2.0.0)
     erubis (2.7.0)
     execjs (2.1.0)
     hike (1.2.3)
@@ -159,6 +160,7 @@ DEPENDENCIES
   capistrano-rvm
   capistrano-unicorn-edge
   coffee-rails (~> 4.0.0)
+  dynamic_sitemaps
   jquery-rails
   pg
   pry-rails
