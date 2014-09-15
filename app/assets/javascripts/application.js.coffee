@@ -11,4 +11,6 @@
 $ ->
   $('a.colorbox').colorbox(rel: 'a.colorbox')
   $(".group1").colorbox({rel:'group1'});
-  $(".owl-carousel").owlCarousel()
+  $(".owl-carousel").owlCarousel({
+      autoPlay: 3000
+    })
