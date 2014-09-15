@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'slim-rails'
 gem 'turbolinks'
 gem "dynamic_sitemaps"
+gem 'owlcarousel-rails'
 
 group :development do
   gem 'capistrano', require: false

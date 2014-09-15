@@ -4,9 +4,11 @@
 #= require bootstrap
 #= require jquery.flexslider
 #= require jquery.colorbox
+#= require owl.carousel
 #= require turbolinks
 #= require_tree .
 
 $ ->
   $('a.colorbox').colorbox(rel: 'a.colorbox')
   $(".group1").colorbox({rel:'group1'});
+  $(".owl-carousel").owlCarousel()

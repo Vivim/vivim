@@ -4,6 +4,8 @@ host "www.vivim.net"
 
 sitemap :site do
   url root_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
+  url mobile_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
+  url why_ror_url, last_mod: Time.now, change_freq: "daily", priority: 1.0
 end
 
 # You can have multiple sitemaps like the above – just make sure their names are different.
@@ -23,15 +25,15 @@ end
 
 # If you want to generate multiple sitemaps in different folders (for example if you have
 # more than one domain, you can specify a folder before the sitemap definitions:
-# 
+#
 #   Site.all.each do |site|
 #     folder "sitemaps/#{site.domain}"
 #     host site.domain
-#     
+#
 #     sitemap :site do
 #       url root_url
 #     end
-# 
+#
 #     sitemap_for site.products.scoped
 #   end
 
