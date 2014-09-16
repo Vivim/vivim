@@ -31,10 +31,23 @@
   margin-top: 262px !important;
 }
 
-.town-foto {
-  width:100%;
-  height: 470px;
+.img-contain {
+  width: 50%;
+  height: 15em;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.about-us-employees { width: 100%; }
-#aboutus .img { margin-bottom: 40px; }
+.town-foto {
+  width:100%;
+  height: auto;
+}
+
+.about-us-employees {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.block, .inner-block {
+  padding: 0;
+}
