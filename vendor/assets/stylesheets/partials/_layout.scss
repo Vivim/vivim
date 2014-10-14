@@ -293,7 +293,7 @@ footer {
 			}
 
 			.facebook:hover{
-				background:#3b5998;
+				background:#00abf0;
 			}
 			.twitter:hover{
 				background:#00abf0;
@@ -305,10 +305,16 @@ footer {
 				background:#cb2027;
 			}
 			.gplus:hover{
-				background:#000;
+				background:#00abf0;
 			}
 			.github:hover{
 				background:#edce44;
+			}
+			/* Customizing gplus button */
+			img.gplus-button {
+				height: 25px;
+				width: 25px;
+				margin: 5px 5px 5px 5px;
 			}
 		}
 	}
