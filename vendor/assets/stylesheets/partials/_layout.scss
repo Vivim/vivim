@@ -282,6 +282,9 @@ footer {
 
 				@media (max-width: 900px) {
 					margin: 0 10px 0 0 !important;
+					&:last-child{
+						margin-right: 0 !important;
+					}
 				}
 			}
 
