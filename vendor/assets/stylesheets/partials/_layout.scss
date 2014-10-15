@@ -270,7 +270,7 @@ footer {
 				float: left;
 				text-align: center;
 				width: 33px;
-				margin: 0 15px;
+				margin: 0 15px 0 0;
 				height: 33px;
 				background:rgba(255,255,255,0.1);
 				border-radius:100%;
@@ -315,9 +315,9 @@ footer {
 			}
 			/* Customizing gplus button */
 			img.gplus-button {
-				height: 25px;
-				width: 25px;
-				margin: 5px 5px 5px 5px;
+				height: 27px;
+				width: 27px;
+				padding: 5px 0px 0px 5px;
 			}
 		}
 	}
