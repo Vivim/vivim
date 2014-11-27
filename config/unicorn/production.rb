@@ -1,5 +1,5 @@
 # Set your full path to application.
-app_path = '/home/ubuntu/vivim/current'
+app_path = '/home/deployer/vivim/current'
 
 # Set unicorn options
 worker_processes 2
