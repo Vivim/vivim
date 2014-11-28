@@ -4,5 +4,5 @@ set :stage, :production
 set :rails_env, :production
 set :deploy_to, '/home/deployer/vivim'
 set :deploy_user, 'deployer'
-set :ssh_options, { forward_agent: true, auth_methods: ['publickey'], keys: [ "~/.ssh/do_vivim.pem" ] }
+set :ssh_options, { forward_agent: true, auth_methods: ['publickey'], keys: [ "~/.ssh/vivim.pem" ], port: 4321 }
 

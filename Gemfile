@@ -10,6 +10,7 @@ gem 'slim-rails'
 gem 'turbolinks'
 gem "dynamic_sitemaps"
 gem 'owlcarousel-rails'
+gem 'therubyracer'
 
 group :development do
   gem 'capistrano', require: false
