@@ -88,9 +88,10 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: 'smtp.sendgrid.net',
     port: 587,
+    domain: 'vivim.net',
     authentication: :plain,
     user_name: ENV['SMTP_USER'],
     password: ENV['SMTP_PASS'],
-    enable_starttls_auto: false
+    enable_starttls_auto: true
   }
 end
