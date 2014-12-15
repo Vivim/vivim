@@ -93,4 +93,4 @@ Rails.application.configure do
 #     password: '12345678',
 #     enable_starttls_auto: false
 #   }
-# end
+end
