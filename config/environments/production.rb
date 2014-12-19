@@ -93,4 +93,5 @@ Rails.application.configure do
     user_name: ENV['SMTP_USER'],
     password: ENV['SMTP_PASS'],
     enable_starttls_auto: true
+  }
 end
